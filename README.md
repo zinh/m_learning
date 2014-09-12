@@ -12,3 +12,5 @@ Completed:
 2. Gradient descent for logistic regression
 
 3. Regularized LR
+
+4. Neural network
