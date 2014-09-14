@@ -20,7 +20,20 @@ idx = zeros(size(X,1), 1);
 %
 % Note: You can use a for-loop over the examples to compute this.
 %
-
+for i = 1:size(X, 1)
+  row = X(i,:);
+  d = norm(row - centroids(1,:), 2);
+  id = 1;
+  for k = 2:K
+    centroid = centroids(k,:);
+    d_temp = norm(row - centroid, 2);
+    if d_temp < d
+      id = k;
+      d = d_temp;
+    end
+  end
+  idx(i) = id;
+end
 
 
 
