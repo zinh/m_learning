@@ -14,3 +14,5 @@ Completed:
 3. Regularized LR
 
 4. Neural network
+
+5. Learning curve, regularize parameter adjustment
